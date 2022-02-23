@@ -3,7 +3,7 @@ import java.io.InputStreamReader
 import java.util.*
 import kotlin.math.max
 
-fun main() {
+private fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val stz = StringTokenizer(br.readLine())
 
@@ -14,7 +14,7 @@ fun main() {
     print(maxPrice)
 }
 
-fun roleDice(inputStr: String): Int {
+private fun roleDice(inputStr: String): Int {
     val stz = StringTokenizer(inputStr)
     val diceCount = Array(7) { 0 }
     var maxCount: Int = 0

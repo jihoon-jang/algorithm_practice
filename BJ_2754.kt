@@ -1,7 +1,7 @@
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
-fun main() {
+private fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val score = when (br.readLine()) {
         "A+" -> 4.3

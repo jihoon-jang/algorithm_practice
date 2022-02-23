@@ -10,7 +10,7 @@ val infection = Array(computerCount + 1) { false }
 val connection = Array(computerCount + 1) { ArrayList<Int>() }
 val queue = LinkedList<Int>()
 
-fun main() {
+private fun main() {
     for (i in 0 until network) {
         stz = StringTokenizer(br.readLine())
         val computer1 = stz.nextToken().toInt()
@@ -28,7 +28,7 @@ fun main() {
     print(count() - 1)
 }
 
-fun infect() {
+private fun infect() {
     while (queue.isNotEmpty()) {
         val computerNo = queue.poll()
 
@@ -42,7 +42,7 @@ fun infect() {
     }
 }
 
-fun count(): Int {
+private fun count(): Int {
     var count = 0
 
     for (i in infection) {

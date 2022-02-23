@@ -2,7 +2,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.*
 
-fun main() {
+private fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val stz = StringTokenizer(br.readLine())
     val num1Str: String = stz.nextToken()

@@ -3,7 +3,7 @@ import java.io.InputStreamReader
 import java.util.*
 import kotlin.math.min
 
-fun main() {
+private fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val stz = StringTokenizer(br.readLine())
     val n = stz.nextToken().toInt()
@@ -24,7 +24,7 @@ fun main() {
     print(countDiff(whiteBoard, blackBoard, board))
 }
 
-fun fillWhiteBoard(whiteBoard: Array<Array<Char>>) {
+private fun fillWhiteBoard(whiteBoard: Array<Array<Char>>) {
     for (i in 0 until 8) {
         for (j in 0 until 8) {
             whiteBoard[i][j] = when ((i + j) % 2) {
@@ -35,7 +35,7 @@ fun fillWhiteBoard(whiteBoard: Array<Array<Char>>) {
     }
 }
 
-fun fillBlackBoard(blackBoard: Array<Array<Char>>) {
+private fun fillBlackBoard(blackBoard: Array<Array<Char>>) {
     for (i in 0 until 8) {
         for (j in 0 until 8) {
             blackBoard[i][j] = when ((i + j) % 2) {
@@ -46,7 +46,7 @@ fun fillBlackBoard(blackBoard: Array<Array<Char>>) {
     }
 }
 
-fun countDiff(whiteBoard: Array<Array<Char>>, blackBoard: Array<Array<Char>>, board: Array<Array<Char>>): Int {
+private fun countDiff(whiteBoard: Array<Array<Char>>, blackBoard: Array<Array<Char>>, board: Array<Array<Char>>): Int {
     var whiteCount = 64
     var blackCount = 64
 
