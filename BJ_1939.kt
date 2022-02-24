@@ -7,7 +7,7 @@ fun main() = with(System.out.bufferedWriter()) {
     val br = System.`in`.bufferedReader()
     val (n, m) = br.readLine().split(" ").map { it.toInt() }
     val bridges = Array(n + 1) { ArrayList<Pair<Int, Int>>() }
-    for (i in 0 until m) {
+    repeat(m) {
         val (land1, land2, weight) = br.readLine().split(" ").map { it.toInt() }
         bridges[land1].add(Pair(land2, weight))
         bridges[land2].add(Pair(land1, weight))
